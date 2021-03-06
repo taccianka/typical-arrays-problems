@@ -5,7 +5,7 @@ exports.min = function min (array) {
     if (arr.length > 0)
     {
         arr.forEach(element => {
-        if (element < max) max = element;
+        if (element < min) min = element;
         });
     } else return 0;
 
