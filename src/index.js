@@ -2,9 +2,9 @@
 exports.min = function min (array) {
     let min;
 
-    if (arr.length > 0)
+    if (array.length > 0)
     {
-        arr.forEach(element => {
+        array.forEach(element => {
         if (element < min) min = element;
         });
     } else return 0;
@@ -16,9 +16,9 @@ exports.max = function max (array) {
   
    let max;
 
-    if (arr.length > 0)
+    if (array.length > 0)
     {
-        arr.forEach(element => {
+        array.forEach(element => {
         if (element > max) max = element;
         });
     } else return 0;
@@ -30,14 +30,14 @@ exports.max = function max (array) {
 exports.avg = function avg (array) {
     let avg = 0;
 
-    if (arr.length > 0)
+    if (array.length > 0)
     {
-        arr.forEach(element => {
+        array.forEach(element => {
             avg += element;
         });
     } else return 0;
 
-    avg = avg/arr.length;
+    avg = avg/array.length;
 
     return avg;
 }
