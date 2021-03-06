@@ -1,8 +1,7 @@
-
 exports.min = function min (array) {
-    let min;
+    let min = 0;
 
-    if (array.length > 0)
+    if (array && array.length > 0)
     {
         array.forEach(element => {
         if (element < min) min = element;
@@ -13,10 +12,10 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  
-   let max;
 
-    if (array.length > 0)
+   let max = 0;
+
+    if (array && array.length > 0)
     {
         array.forEach(element => {
         if (element > max) max = element;
@@ -28,9 +27,10 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
+
     let avg = 0;
 
-    if (array.length > 0)
+    if (array && array.length > 0)
     {
         array.forEach(element => {
             avg += element;
